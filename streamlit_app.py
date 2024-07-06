@@ -43,7 +43,7 @@ st.write(range(10))
 
 #Importing Image from pillow python library to open images
 from PIL import Image
-img = Image.open("https://streamlit.io/images/brand/streamlit-logo-primary-colormark-darktext.png")
+img = Image.open("streamlit-logo.png")
 
 #Display image using streamlit
 #Width of an image
