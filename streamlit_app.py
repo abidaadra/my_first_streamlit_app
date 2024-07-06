@@ -86,13 +86,27 @@ if(st.button("About")):
 #Save the input text in the variable 'name'
 #1st argument shows the title of the text input box
 #2nd argument displays a default text inside the text input area
-name = st.text_input("Enter Your name", "Type Here ...")
+name = st.text_input("Enter Your name, then click submit", "Type Here ...")
 
 #Display the name when the submit button is clicked
 #.title() is used to get the input text string
 if(st.button('Submit')):
 	result = name.title()
 	st.success(result)
+
+#Slider
+#First argument takes the title of the slider
+#Second argument takes the starting of the slider
+#Last argument takes the end number
+level = st.slider("Select the level", 1, 5)
+
+#Print the level
+#format() is used to print value 
+# of a variable at a specific position
+st.text('Selected: {}'.format(level))
+
+
+
 
 
 
